@@ -62,7 +62,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   config.action_mailer.delivery_method = :smpt
-    config.action_mailer.smpt_settings ={
+    config.action_mailer.smpt_settings = {
       address: 'smtp.mailgun.org',
       port: 587,
       domain: 'sandbox087c96be06c84fe4980d1625d7fd3e8f.mailgun.org',
