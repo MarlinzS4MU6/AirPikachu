@@ -42,3 +42,8 @@ gem 'omniauth', '~> 1.6'
 gem 'omniauth-facebook', '~> 4.0'
 gem "figaro"
 gem 'simple_form'
+# File Uploads
+gem "carrierwave", "~> 1.0.0"
+gem "mini_magick", "~> 4.7.0"
+gem 'carrierwave-aws', "~> 1.1.0"
+gem "unf", "~> 0.1.4"

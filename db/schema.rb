@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_26_172554) do
+ActiveRecord::Schema.define(version: 2018_06_26_222005) do
+
+  create_table "photos", force: :cascade do |t|
+    t.integer "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "image"
+    t.index ["room_id"], name: "index_photos_on_room_id"
+  end
 
   create_table "rooms", force: :cascade do |t|
     t.string "home_type"
