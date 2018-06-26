@@ -45,6 +45,7 @@ a {
   border-radius: 5px;
   font-weight: bold;
   padding: 9px 27 px;
+
 }
 
 .btn-small {
@@ -58,12 +59,13 @@ a {
 
 .btn.btn-default {
   width: 100%;
-  border_color: #c4c4c4;
+  border-color: #c4c4c4;
   background: white;
-  color: 2px;
+  color: black;
   border-radius: 2px;
   padding: 10px 0;
   margin-top: 10px
+
 }
 
 .btn.btn-normal {
@@ -148,4 +150,43 @@ a {
 
 .avartar-full {
   width: 100%;
+}
+
+//FORMS
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 2px;
+  height: 4rem;
+}
+
+//SIDEBAR
+.sidebar-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #82888a;
+}
+
+.sidebad-link {
+  color: #82888a;
+  text-decoration: none;
+}
+
+.sidebad-link:hover, .sidebad-link:focus {
+  color: #CACCCD;
+  text-decoration: none;
+
+}
+
+.active.sidebad-link {
+  color: #565A5C;
+  font-weight: bold;
+  text-decoration: none;
 }
