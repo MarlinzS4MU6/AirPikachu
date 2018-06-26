@@ -1,4 +1,4 @@
-class RoomController < ApplicationController
+class RoomsController < ApplicationController
   before_action :set_room, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:show]
 
@@ -16,8 +16,9 @@ class RoomController < ApplicationController
       redirect_to listing_room_path(@room), notice: "Saved...."
     else
       render :new, notice: "Something went wrong..."
+    end
   end
-  
+
   def show
   end
 
@@ -55,7 +56,7 @@ class RoomController < ApplicationController
   end
 
   def room_params
-    params.require(:room).permit(:home_type, :room_type, :accommodate, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active)
+    params.require(:room).permit(:home_type, :room_type, :accommodate, :bedroom, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active)
   end
 
 end
