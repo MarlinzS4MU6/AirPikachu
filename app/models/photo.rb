@@ -3,5 +3,8 @@ class Photo < ApplicationRecord
 
   require 'mini_magick'
   mount_uploader :image, ImageUploader
-  serialize :image, JSON
+
+  
+
+
 end

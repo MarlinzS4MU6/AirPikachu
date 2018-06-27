@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
-
+gem 'pg', '~> 0.18.4'
 gem 'rails', '~> 5.2.0'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
@@ -47,3 +47,5 @@ gem "carrierwave", "~> 1.0.0"
 gem "mini_magick", "~> 4.7.0"
 gem 'carrierwave-aws', "~> 1.1.0"
 gem "unf", "~> 0.1.4"
+
+gem "font-awesome-rails"
